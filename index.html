@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>From Here to New Horizons</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🌏 LANDING SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Not goodbye.<br>Just see you in a new land.</h1>
+      <p>
+        From familiar kitchens to new horizons —<br>
+        your journey is just beginning.
+      </p>
+      <button class="primary-btn" onclick="scrollToJourney()">
+        Start the Journey →
+      </button>
+    </div>
+  </section>
+
+  <!-- 🧭 JOURNEY SECTION -->
+  <section class="section journey" id="journey">
+    <h2>Your Story So Far</h2>
+    <p class="section-text">
+      You didn’t just learn to cook — you learned to care.<br>
+      From home kitchens filled with laughter,<br>
+      to long hours, mistakes, and proud moments —<br>
+      every step shaped the chef you are today.
+    </p>
+
+    <ul class="timeline">
+      <li>🏠 First kitchen memories at home</li>
+      <li>🍳 Choosing cooking as a passion</li>
+      <li>🔥 Discipline, patience, and growth</li>
+      <li>✈️ Now stepping into New Zealand</li>
+    </ul>
+  </section>
+
+  <!-- 🖼 MEMORY WALL -->
+  <section class="section memories">
+    <h2>Moments We’ll Always Remember</h2>
+
+    <div class="memory-grid">
+      <div class="memory-card">Food tasted better when you cooked.</div>
+      <div class="memory-card">Every celebration had your signature dish.</div>
+      <div class="memory-card">Late nights, tired feet, happy hearts.</div>
+      <div class="memory-card">Love, served on a plate.</div>
+    </div>
+  </section>
+
+  <!-- 💌 LETTERS SECTION -->
+  <section class="section letters">
+    <h2>Open When You Miss Home</h2>
+
+    <div class="letters-grid">
+
+      <div class="letter-card">
+        <h3>From Family</h3>
+        <button onclick="toggleLetter('letter1')">Open Letter</button>
+        <p id="letter1" class="letter-text hidden">
+          No matter how far you go, this will always be home.<br><br>
+          We’re proud of your courage, discipline, and heart.<br><br>
+          Cook bravely. Live fully.<br>
+          We are always with you.
+        </p>
+      </div>
+
+      <div class="letter-card">
+        <h3>From Siblings & Cousins</h3>
+        <button onclick="toggleLetter('letter2')">Open Letter</button>
+        <p id="letter2" class="letter-text hidden">
+          When things feel unfamiliar, remember how far you’ve come.<br><br>
+          New country. New kitchen.<br>
+          Same strong you.
+        </p>
+      </div>
+
+      <div class="letter-card">
+        <h3>From Friends</h3>
+        <button onclick="toggleLetter('letter3')">Open Letter</button>
+        <p id="letter3" class="letter-text hidden">
+          Don’t forget us when your food becomes famous 😉<br><br>
+          Until then — go show New Zealand what you’re made of.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 🇳🇿 NEW CHAPTER -->
+  <section class="section nz">
+    <h2>Aotearoa Awaits</h2>
+    <p class="section-text">
+      New ingredients.<br>
+      New people.<br>
+      New challenges.<br><br>
+      But the same passion that brought you here
+      will take you further than you imagine.
+    </p>
+  </section>
+
+  <!-- ❤️ FINAL MESSAGE -->
+  <section class="section farewell">
+    <h2>Always Home</h2>
+    <p class="section-text">
+      This isn’t the end of a chapter.<br>
+      It’s the start of a bigger one.<br><br>
+      Wherever life takes you —<br>
+      you are deeply loved.
+    </p>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
